@@ -1,17 +1,10 @@
 import math
 
-input_filepath = "../input/input.txt"
-
-
-def part_one():
+def part_one(input):
     start = 50
     current = start
 
     pw = 0
-
-    text_file = open(input_filepath, "r")
-    input = text_file.read()
-    text_file.close()
 
     for line in input.splitlines():
         direction = line[:1]
@@ -36,15 +29,11 @@ def part_one():
     print(pw)
 
 
-def part_two():
+def part_two(input):
     start = 50
     current = start
 
     pw = 0
-
-    text_file = open(input_filepath, "r")
-    input = text_file.read()
-    text_file.close()
 
     for line in input.splitlines():
         prev = current
@@ -76,6 +65,3 @@ def part_two():
 
     print(pw)
 
-
-if __name__ == "__main__":
-    part_two()

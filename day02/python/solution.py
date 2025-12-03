@@ -2,10 +2,7 @@ import math
 import time
 
 
-input_filepath = "../input/input.txt"
-
-
-def part_one():
+def part_one(input):
     factors = {
         0: [],
         1: [],
@@ -20,10 +17,6 @@ def part_one():
         10: [5],
     }
     bad_ids = set()
-
-    text_file = open(input_filepath, "r")
-    input = text_file.read()
-    text_file.close()
 
     result = 0
 
@@ -74,7 +67,7 @@ def part_one():
     print(result)
 
 
-def part_two():
+def part_two(input):
     start = time.time()
 
     factors = {
@@ -92,10 +85,6 @@ def part_two():
     }
 
     bad_ids = set()
-
-    text_file = open(input_filepath, "r")
-    input = text_file.read()
-    text_file.close()
 
     result = 0
 
@@ -149,7 +138,3 @@ def part_two():
     print((end - start) * 1000)
 
     print(result)
-
-
-if __name__ == "__main__":
-    part_two()
