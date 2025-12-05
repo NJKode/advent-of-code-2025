@@ -45,7 +45,8 @@ def runner(day, part, test):
     solution = solutions[(day, part)]
 
     start = time.time()
-    solution(input)
+    answer = solution(input)
+    print(answer)
     end = time.time()
 
     elapsed_seconds = end - start

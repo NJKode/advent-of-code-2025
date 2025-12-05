@@ -25,7 +25,7 @@ def part_one(input):
         joltage = int(num_string)
         result += joltage
 
-    print(result)
+    return result
 
 
 

@@ -45,14 +45,14 @@ def part_one(input):
                 if adjacent_count < 4:
                     num_accessible_rolls += 1
 
-    print(num_accessible_rolls)
+    return num_accessible_rolls
 
 
 def part_two(input):
     rows = input.splitlines()
     map_space = [list(row) for row in rows]
 
-    num_accessible_rolls = -1
+    num_accessible_rolls = 1 # will be overwritten in loop below
     rolls_removed = 0
 
     while num_accessible_rolls > 0:
@@ -64,7 +64,7 @@ def part_two(input):
 
         rolls_removed += num_accessible_rolls
 
-    print(rolls_removed)
+    return rolls_removed
 
 
 def _get_accessible_rolls(map_space):

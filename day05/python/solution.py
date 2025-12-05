@@ -27,7 +27,7 @@ def part_one(input):
                 num_fresh_ingredients += 1
                 break
 
-    print(num_fresh_ingredients)
+    return num_fresh_ingredients
 
 
 def part_two(input):
@@ -64,7 +64,7 @@ def part_two(input):
 
     num_fresh_ingredients += (1 + current_upper_limit - current_lower_limit)
 
-    print(num_fresh_ingredients)
+    return num_fresh_ingredients
 
 
 

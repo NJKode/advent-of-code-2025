@@ -64,7 +64,8 @@ def part_one(input):
 
     for id in bad_ids:
         result += id
-    print(result)
+
+    return result
 
 
 def part_two(input):
@@ -137,4 +138,4 @@ def part_two(input):
     end = time.time()
     print((end - start) * 1000)
 
-    print(result)
+    return result

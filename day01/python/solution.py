@@ -26,7 +26,7 @@ def part_one(input):
         if current == 0:
             pw += 1
 
-    print(pw)
+    return pw
 
 
 def part_two(input):
@@ -63,5 +63,5 @@ def part_two(input):
                 pw += 1
             current = current - 100
 
-    print(pw)
+    return pw
 
