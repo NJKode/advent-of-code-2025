@@ -5,6 +5,7 @@ import day01.python.solution as day01
 import day02.python.solution as day02
 import day03.python.solution as day03
 import day04.python.solution as day04
+import day05.python.solution as day05
 
 
 solutions = {
@@ -16,9 +17,8 @@ solutions = {
     (3, 2): day03.part_two,
     (4, 1): day04.part_one,
     (4, 2): day04.part_two,
-    # (5, 1): day05.part_one,
-    # (5, 2): day05.part_two,
-
+    (5, 1): day05.part_one,
+    (5, 2): day05.part_two,
 }
 
 
